@@ -3,3 +3,6 @@
 .settings
 *~
 build
+.env
+auth.json
+*.sql
