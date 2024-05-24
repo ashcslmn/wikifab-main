@@ -40,11 +40,11 @@ COPY LocalSettings.php /var/www/html/LocalSettings.php
 RUN wget -cO - https://extdist.wmflabs.org/dist/extensions/LocalisationUpdate-REL1_35-ba7d734.tar.gz | tar -xz -C extensions 
 # RUN mv extensions/LocalisationUpdate-REL1_35-ba7d734 extensions/LocalisationUpdate
 
-RUN php maintenance/update.php
+# RUN php maintenance/update.php
 
-RUN php maintenance/initWikifab.php --setWikifabHomePage --int
+# RUN php maintenance/initWikifab.php --setWikifabHomePage --int
 
-
+# RUN mv vendor/mediawiki/flow extensions/Flow
 # Expose port 80d
 EXPOSE 80
 

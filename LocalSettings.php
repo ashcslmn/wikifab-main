@@ -132,3 +132,4 @@ wfLoadSkin( 'Vector' );
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 
+include('LocalSettings.wikifab.php');
